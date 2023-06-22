@@ -1,0 +1,229 @@
+/* CSS fonts*/
+
+@font-face {
+    font-family: "Raleway";
+    src: url("./Fonts/Raleway-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url("./Fonts/Raleway-Italic-VariableFont_wght.ttf");
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Rubik";
+    src: url("./Fonts/Rubik-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: "Rubik";
+    src: url("./Fonts/Rubik-Italic-VariableFont_wght.ttf");
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Quantico";
+    src: url("./Fonts/Quantico-Regular.otf");
+}
+
+@font-face {
+    font-family: "Quantico";
+    src: url("./Fonts/Quantico-Bold.otf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Quantico";
+    src: url("./Fonts/Quantico-Italic.otf");
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Quantico";
+    src: url("./Fonts/Quantico-BoldItalic.otf");
+    font-style: italic;
+    font-weight: bold;
+}
+
+:root {
+    --bleu : #0030ff;
+    --bleu-hover : #0020ff;
+    --rouge : #e00000;
+}
+
+/***** CSS Général *****/
+
+* {
+    font-family: "Quantico", "Rubik", "Raleway", "Verdana";
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2, h3, .center {
+    text-align: center;
+}
+
+h1, h2, h3 {
+    margin-top: 40px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+.box {
+    margin: 0 5%;
+}
+
+.globalStats {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.globalStat, .updateTime {
+    display: block;
+    padding: 5px 5%;
+    text-align: center;
+}
+
+.globalStat p:first-child {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.globalStat {
+    width: 10%;
+}
+
+.gdStat {
+    width: 20%;
+}
+
+.gdfrStat {
+    width: 23%;
+}
+
+.dlStat {
+    width: 30%;
+}
+
+.updateTime p {
+    font-size: x-large;
+}
+
+#welcome {
+    padding-bottom: 50px;
+}
+
+/***** CSS Header *****/
+
+header {
+    background-color: var(--bleu);
+    width: calc(100% - 30px);
+    padding: 15px;
+    display: flex;
+}
+
+header a {
+    font-family: "Rubik";
+    text-decoration: none;
+    color: white;
+    background-color: var(--bleu);
+
+}
+
+header #titre {
+    font-size: xx-large;
+    display: inline-block;
+    align-items: center;
+    width: 70%;
+}
+
+/*** Menu principal ***/
+
+header nav {
+    display: inline-block;
+    width: auto;
+    font-size: large;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+}
+
+header nav li {
+    float: left;
+}
+
+header nav li a {
+    display: block;
+    padding: 10px 20px;
+    text-align: center;
+    margin: auto;
+}
+
+header nav li a:hover {
+    background-color: var(--bleu-hover);
+}
+
+/** Sous-menus **/
+
+header nav li ul {
+    display: none;
+    max-width: 200px;
+}
+
+header nav li ul li{
+    display: block;
+    width: 100%;
+}
+
+header nav #menuStats:hover ul,  header nav #menuLeaderborad:hover ul{
+    display: block;
+    position: absolute;
+}
+
+/*** Pied de page ***/
+
+footer {
+    font-family: "Rubik";
+    text-align: center;
+    display: block;
+    background-color: var(--rouge);
+    padding: 15px;
+    width: calc(100% - 30px) ;
+    font-size: 20px;
+}
+
+footer p {
+    font-family: "Rubik";
+    color: white;
+}
+
+footer a {
+    font-family: "Rubik";
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}

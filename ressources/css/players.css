@@ -1,0 +1,68 @@
+* {
+    color: black;
+}
+
+h1, h2 {
+    margin-top: 40px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+.players {
+    text-align: center;
+    margin: auto;
+    margin-bottom: 100px;
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 90%;
+}
+
+.players td,
+.players th {
+    padding: 5px 0;
+    border: 1px solid black;
+    min-width: max-content;
+}
+
+.players th {
+    padding: 15px 0;
+    font-size: 22px;
+    border: 2px solid black;
+    width: 10%;
+    background-color: #cccccc;
+}
+
+.players td {
+    background-color: #fcfcfc;
+}
+
+.noGDCompte td, .noGDCompte p {
+    background-color: #cce1ff;
+    font-style: italic;
+}
+
+.noRank td , .noRank p{
+    font-style: italic;
+    background-color: #fad1d1;
+}
+
+.noGDCompte p, .noRank p {
+    width: max-content;
+}
+
+#legend {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.icon {
+    width: 25px;
+}

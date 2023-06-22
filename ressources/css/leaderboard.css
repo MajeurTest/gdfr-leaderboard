@@ -1,0 +1,82 @@
+* {
+    color: black;
+}
+
+h1, h2 {
+    margin-top: 40px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+.leaderboard, 
+.demonlist {
+    width: 55%;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 100px;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.leaderboard tr,
+.demonlist tr {
+    border: 1px solid black;
+}
+
+.leaderboard td, 
+.leaderboard th,
+.demonlist td,
+.demonlist th {
+    padding: 5px 0;
+    border: 1px solid black;
+    min-width: max-content;
+}
+
+.leaderboard th,
+.demonlist th {
+    padding: 15px 0;
+    font-size: 22px;
+    border: 2px solid black;
+    background-color: #cccccc;
+}
+
+.leaderboard th {
+    width: 45%;
+}
+
+.demonlist th {
+    width: 30%;
+}
+
+.leaderboard th:first-child,
+.demonlist th:first-child {
+    width: 10%;
+}
+
+#first {
+    background-color: gold;
+}
+
+#second {
+    background-color: silver;
+}
+
+#third {
+    background-color: #CD7F32 ;
+}
+
+#first, #second, #third {
+    color: black;
+}
+
+.top {
+    background-color: rgb(95, 95, 95);
+    color: white;
+}
