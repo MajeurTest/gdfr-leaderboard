@@ -183,6 +183,10 @@ header nav li a:hover {
     background-color: var(--bleu-hover);
 }
 
+#dropButton {
+    display: none;
+}
+
 /** Sous-menus **/
 
 header nav li ul {
@@ -195,10 +199,13 @@ header nav li ul li{
     width: 100%;
 }
 
-header nav #menuStats:hover ul,  header nav #menuLeaderborad:hover ul{
-    display: block;
-    position: absolute;
+@media screen and (min-width: 701px) {
+    header nav #menuStats:hover ul,  header nav #menuLeaderborad:hover ul{
+        display: block;
+        position: absolute; 
+    }
 }
+
 
 /*** Pied de page ***/
 

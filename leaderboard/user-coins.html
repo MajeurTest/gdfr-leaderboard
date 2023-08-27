@@ -6,7 +6,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../ressources/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="../ressources/css/main.css">
+    <link rel="stylesheet" media="screen and (max-width: 700px)" href="../ressources/css/main-mobile.css">
     <link rel="stylesheet" href="../ressources/css/leaderboard.css">
 	<script src="../ressources/js/main.js" defer></script>
     <title>Classement User Coins - GDFR Leaderboard</title>
@@ -16,7 +18,8 @@
 
     <header>
         <a id="titre" href="../">GDFR Leaderboard</a>
-        <nav>
+        <div class="mobile" id="dropButton"><i class="fa-solid fa-bars" style="color: white;"></i></div>
+        <nav id="nav">
             <ul>
                 <li><a href="../">Accueil</a></li>
                 <li id="menuStats">
