@@ -61,8 +61,32 @@ h2 {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .icon {
     width: 25px;
+}
+
+@media screen and (max-width: 800px) {
+
+    h1 {
+        font-size: 35px;
+    }
+    
+    h2 {
+        font-size: 30px;
+    }
+    
+    h3 {
+        font-size: 20px;
+    }
+
+    .players tr > th {
+        font-size: small;
+    }
+
+    .players tr > td {
+        font-size: xx-small;
+    }
 }

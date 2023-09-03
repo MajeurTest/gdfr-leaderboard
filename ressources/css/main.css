@@ -183,10 +183,6 @@ header nav li a:hover {
     background-color: var(--bleu-hover);
 }
 
-#dropButton {
-    display: none;
-}
-
 /** Sous-menus **/
 
 header nav li ul {
@@ -199,10 +195,14 @@ header nav li ul li{
     width: 100%;
 }
 
-@media screen and (min-width: 701px) {
+@media screen and not ((max-width: 700px) or (pointer: coarse)) {
     header nav #menuStats:hover ul,  header nav #menuLeaderborad:hover ul{
         display: block;
         position: absolute; 
+    }
+
+    #dropButton {
+        display: none;
     }
 }
 
@@ -233,4 +233,83 @@ footer a {
 footer a:hover {
     text-decoration: underline;
     font-weight: bold;
+}
+
+@media screen and ((max-width: 800px) or (pointer: coarse)) {
+    header {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    #nav {
+        display: none;
+    }
+    
+    header > nav {
+        width: 100%;
+    }
+    
+    header > nav li {
+        display: block;
+        width: 100%;
+    
+    }
+    
+    nav > ul > li > a {
+        font-weight: 900;
+        font-size: larger;
+    }
+    
+    #menuStats > ul ,  #menuLeaderborad > ul {
+        display: block;
+        width: 100%;
+        margin: auto;
+    }
+    
+    #menuStats > ul > li > a ,  #menuLeaderborad > ul > li > a {
+        display: block;
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        margin: 0;
+    }
+    
+    .navType {
+        font-weight: bold;
+    }
+    
+    #dropButton {
+        display: block;
+        width: 25%;
+        color: white;
+        font-size: xx-large;
+        text-align: right;
+        float: right;
+        max-height: none;
+        rotate: 90;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    h1 {
+        font-size: 35px;
+    }
+    
+    h2 {
+        font-size: 30px;
+    }
+    
+    h3 {
+        font-size: 20px;
+    }
+
+    .globalStat > p {
+        font-size: 15px;
+    }
+    
+    .globalStat > p:first-child {
+        font-size: 19px;
+        font-weight: 900;
+    }
 }
